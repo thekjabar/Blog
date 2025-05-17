@@ -95,7 +95,7 @@ function submit() {
         </Button>
       </div>
 
-      <Card class="flex-1 bg-white dark:bg-[#111827] border-gray-200 dark:border-gray-800">
+      <Card class="flex-1 bg-white dark:bg-[#1a1b1d] border-gray-200 dark:border-gray-800">
         <CardHeader>
           <CardTitle>Post Details</CardTitle>
           <CardDescription class="text-gray-500 dark:text-gray-400">
@@ -109,7 +109,6 @@ function submit() {
               <Input
                 id="title"
                 v-model="form.title"
-                class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
                 :class="{ 'border-red-500': form.errors.title }"
                 placeholder="Enter post title"
               />
@@ -122,7 +121,6 @@ function submit() {
               <Label for="author_id" class="text-gray-700 dark:text-gray-300">Author</Label>
               <Select v-model="form.author_id">
                 <SelectTrigger
-                  class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
                   :class="{ 'border-red-500': form.errors.author_id }"
                 >
                   <SelectValue placeholder="Select an author" />
@@ -149,7 +147,6 @@ function submit() {
                 id="content"
                 v-model="form.content"
                 rows="10"
-                class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
                 :class="{ 'border-red-500': form.errors.content }"
                 placeholder="Write your post content here..."
               />
@@ -183,7 +180,7 @@ function submit() {
           </Button>
         </CardFooter>
       </Card>
-      
+
     </div>
   </AppLayout>
 </template>
